@@ -1,0 +1,54 @@
+def ejemploUno(n):
+#4
+    c=n+1
+    d=c*n
+    e=n*n
+    total=c+e-d
+    print(f"total={total}")
+ejemploUno(2)
+
+def ejemploDos(n):
+#1+n^2
+    contador=0
+    for i in range (n):
+        for j in range (n):
+            contador+=1
+    return contador
+print(ejemploDos(1))
+
+def ejemploTres (n):
+    #2+n
+    x=n*2
+    y=0
+    for m in range (100):
+        y=x-n
+    return y
+print(ejemploTres(10000000))
+
+def ejemploCuatro(n):
+#3
+    x =3*3.1416+n
+    y=x+3*3-n
+    z=x+y
+    return z
+print(ejemploCuatro(9))
+
+def ejemplo5(x):
+    #1+n
+    n=10
+    for j in range (0,x,1):
+        n=j+n
+    return n
+print(ejemplo5(10))
+
+def ejemplo6(n):
+    #t(n)=n^3+2
+    data =[[[1 for x in range (n)]for x in range (n) ]for x in range (n)]
+    suma =0
+    for d  in range (n):
+        for r in range (n):
+            for c in range (n):
+                suma += data [d][r][c]
+    return suma
+print(ejemplo6(10))
+
